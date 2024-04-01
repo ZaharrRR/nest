@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/constructor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="stats.js"></script>
+    <title>Table Generator</title>
+  </head>
+  <body>
+    <header class="fallout76-nav">
+      <div class="nav-content">
+        <h1>Fallout 76 Fun</h1>
+        <div class="separator"></div>
+        <ul class="nav-list-ul">
+          <li class="nav_li" id="home"><a href="home.html">Home</a></li>
+          <li class="nav_li" id="marketplace">
+            <a href="marketplace.html">Marketplace</a>
+          </li>
+          <li class="nav_li" id="blog">
+            <a href="constructor.html">Constructor</a>
+          </li>
+          <li class="nav_li" id="users">
+            <a href="users.html">Users</a>
+          </li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <img src="img/user.png" />
+        <ul class="context-menu">
+          <li><a href="#">Профиль</a></li>
+          <li><a href="#">Настройки</a></li>
+          <li><a href="#">Выход</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h2>Item Tracker</h2>
+      <form id="tableForm">
+        <label for="weekdays">Select Days:</label>
+        <select id="weekdays" name="weekdays" multiple>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select>
+
+        <label for="item">Select Item:</label>
+        <select id="item" name="language">
+          <option value="Nuka-Cola">Nuka-Cola</option>
+          <option value="RadAway">RadAway</option>
+          <option value="Stimpak">Stimpak</option>
+          <option value="Power Armor">Power Armor</option>
+          <option value="Caps">Caps</option>
+          <option value="Gauss Rifle">Gauss Rifle</option>
+          <option value="Vault Suit">Vault Suit</option>
+          <option value="Fusion Core">Fusion Core</option>
+        </select>
+
+        <button id="generateTableButton" type="submit">Generate Table</button>
+      </form>
+
+      <div id="tableContainer">
+        <template id="table-template">
+          <table>
+            <thead>
+              <tr></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </template>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2023 Fallout 76 Fun</p>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="constructor.js"></script>
+    <script src="script.js"></script>
+    <script src="pageLoadTime.js"></script>
+  </body>
+</html>

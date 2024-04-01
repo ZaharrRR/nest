@@ -1,0 +1,8 @@
+<header class="fallout76-nav">
+      {{> navbar_content }}
+      {{#if isAuthorized}}
+        {{> navbar_menu }}
+      {{else}}
+        {{> navbar_buttons }}
+      {{/if}}
+</header>

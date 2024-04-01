@@ -1,0 +1,18 @@
+<table class="table-date">
+    <thead class="table-date__head">
+    <tr class="table-date__row">
+        <th class="table-date__col table-date__col_main">Дата</th>
+        <th class="table-date__col table-date__col_main">Посещения</th>
+        <th class="table-date__col table-date__col_main">Сделки</th>
+    </tr>
+    </thead>
+    <tbody class="table-date__body">
+        {{#each elements}}
+            <tr class="table-date__row">
+                <td class="table-date__col">{{ date }}</td>
+                <td class="table-date__col">{{ visitors }}</td>
+                <td class="table-date__col"> {{ trades }}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
